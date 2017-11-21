@@ -1,22 +1,21 @@
 /*
  * LL.hpp
  *
- *  Created on: Nov 13, 2017
+ *  Created on: Nov 10, 2017
  *      Author: Michael Ly
  */
 
 #ifndef LL_HPP_
 #define LL_HPP_
-
 #include <iostream>
-#include <stdlib.h>
 #include <string>
 #include "NodeL.hpp"
 using namespace std;
 
-class LL {
-	NodeL* first;
-	NodeL* last;
+class LL{
+	friend class Game;
+	NodeL *first;
+	NodeL *last;
 	int size;
 	int score;
 
